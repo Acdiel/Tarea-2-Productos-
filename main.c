@@ -173,23 +173,23 @@ int op=10;
         char nombre_c[20];
         int cosas_al_carro=0;
 
-       printf("Ingrese producto: ");
-       scanf(" %[^\n]",nombre_c);
+        printf("Ingrese producto: ");
+        scanf(" %[^\n]",nombre_c);
 
-       printf("Ingrese cuantos: ");
-       scanf("%d",&cosas_al_carro);
+        printf("Ingrese cuantos: ");
+        scanf("%d",&cosas_al_carro);
 
         while (b!=NULL){
 
           if (strcmp(nombre_c,b->nombre)==0){
 
-          strcpy(fila[i].chek[indice].nombre_producto,b->nombre);
-          fila[i].chek[indice].cantidad = cosas_al_carro;
-          fila[i].chek[indice].precios = b->precio;
-          break;
+            strcpy(fila[i].chek[indice].nombre_producto,b->nombre);
+            fila[i].chek[indice].cantidad = cosas_al_carro;
+            fila[i].chek[indice].precios = b->precio;
+            break;
         }
       
-        else b=nextMap(producto_nombre);
+          else b=nextMap(producto_nombre);
         }
 
         indice++;

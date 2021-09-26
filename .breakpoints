@@ -1,3 +1,12 @@
 {
-  "files": {}
+  "files": {
+    "productos.c": [
+      {
+        "id": "4642f795-312b-4cbf-8d73-560f67a7dc04",
+        "line": 36,
+        "version": 1505,
+        "index": 702
+      }
+    ]
+  }
 }

@@ -158,9 +158,9 @@ void exportarProductos(Map* producto_nombre,Map* producto_marca,Map* producto_ti
 
 void agregarProducto(Map* producto_nombre,Map* producto_marca,Map* producto_tipo,Map* producto_stock,Map* producto_precio){
 
-  Producto *b=NULL;
+      Producto *b=NULL;
 
-  b = malloc(sizeof(Producto));
+      b = malloc(sizeof(Producto));
 
       printf("Nombre:\n");
       scanf(" %[^\n]", b->nombre);
@@ -193,23 +193,23 @@ void buscarProductoTipo(Map* producto_nombre,Map* producto_marca,Map* producto_t
 
   scanf("%s",busca_tipo);
 
-      b = firstMap(producto_nombre);
+  b = firstMap(producto_nombre);
 
+  printf("---------------\n"); 
+
+  while (b!=NULL){
+
+    if (strcmp(busca_tipo,b->tipo)==0){
+
+      printf("Nombre: %s\n",b->nombre);
+      printf("Marca:  %s\n",b->marca);
+      printf("Stock:  %d\n",b->stock);
+      printf("Precio: %d\n",b->precio);
       printf("---------------\n"); 
-
-      while (b!=NULL){
-
-        if (strcmp(busca_tipo,b->tipo)==0){
-
-        printf("Nombre: %s\n",b->nombre);
-        printf("Marca:  %s\n",b->marca);
-        printf("Stock:  %d\n",b->stock);
-        printf("Precio: %d\n",b->precio);
-         printf("---------------\n"); 
         
-        }
-        b=nextMap(producto_nombre);
-      }
+    }
+      b=nextMap(producto_nombre);
+  }
 
 }
 
@@ -221,18 +221,18 @@ void buscarProductoMarca(Map* producto_nombre,Map* producto_marca,Map* producto_
 
   scanf("%s",busca_Marca);
 
-      b = firstMap(producto_nombre);
+  b = firstMap(producto_nombre);
 
-      printf("---------------\n"); 
+  printf("---------------\n"); 
 
-      while (b!=NULL){
+  while (b!=NULL){
 
-        if (strcmp(busca_Marca,b->marca)==0){
+    if (strcmp(busca_Marca,b->marca)==0){
 
-        printf("Nombre: %s\n",b->nombre);
-        printf("Tipo:   %s\n",b->tipo);
-        printf("Stock:  %d\n",b->stock);
-        printf("Precio: %d\n",b->precio);
+      printf("Nombre: %s\n",b->nombre);
+      printf("Tipo:   %s\n",b->tipo);
+      printf("Stock:  %d\n",b->stock);
+      printf("Precio: %d\n",b->precio);
         printf("---------------\n"); 
         
         }
