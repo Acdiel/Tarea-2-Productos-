@@ -94,7 +94,7 @@ int op=10;
 		switch (op) 
     {
 
-//➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖//
+//➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖-➖//
     case 1:
 
      importarProductos(producto_nombre,producto_marca,producto_tipo,producto_stock,producto_precio);
