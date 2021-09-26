@@ -59,6 +59,7 @@ void importarProductos(Map* producto_nombre,Map* producto_marca,Map* producto_ti
   FILE * lista = fopen("productos.csv","r");
   char linea[300];
   char *token;
+
   
   while(fgets(linea,sizeof(linea), lista)!=NULL){
 
