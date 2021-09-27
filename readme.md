@@ -10,52 +10,58 @@ Se deja el link para compilar el codigo.
 ----------------------------------------------------
 ### 📝 Las opciones que funcionan correctamente y las que no lo hacen indicando posibles causas
 ----------------------------------------------------
-```
- La funcion exportar (case 2) no funciona en en su totalidad.
 
- Si bien crea el archivo y lo modifica. No logra escribir el ultimo elemento de la lista (cancion con sus datos).
-  Una posible causa es el mismo algoritmo. No se logra comprender por que no funciona al modificar la condicion del while y tampoco se entiende por que la condicion escrita en el while no funciona.
-  Otra posible cause es la misma plataforma que ha dado problema (bugs) con el codigo.   
+| MENÚ OPCIONES | ESTADO FUNCIONAL |
+| -------------|:-------------:| 
+| 1. Importar Productos | ✔ |
+| 2. Exportar Productos (Se salta el ultimo producto)| ✔ |
+| 3. Agregar Productos  | ✔ |
+| 4. Buscar Productos por Tipo  | ✔ |
+| 5. Buscar Productos por Marca | ✔ |
+| 6. Buscar Productos por Nombre  | ✔ |
+| 7. Mostrar Todos los Productos | ✔ |
+| 8. Agregar al Carrito  | ✔ |
+| 9. Concretar Compra (No borra productos comprados del stock)  | ✔ |
 
- Case 9 no logra extraer los proc¿ductos comprados del stock inicial.
-         
-```
 ----------------------------------------------------     
 ### 🤝 Aspectos positivos y a mejorar por cada uno de los integrantes (coevaluación) 
 ----------------------------------------------------
 
-**👤Bastian Carrasco**
+**👤 Bastian Carrasco**
 
-* `ASPECTOS POSITIVOS` (+): Persevera hasta que el codigo que esta realizando quede funcionando.
+* `ASPECTOS POSITIVOS` (+): Hizo la mayor parte del codigo hasta tener algo que funcionara en casi todos los casos.  
 
-* `ASPECTOS A MEJORAR` (*): A veces se calienta mucho la cabeza y avanza solo.
+* `ASPECTOS A MEJORAR` (*): Se le olvida que debe pedir ayuda.
+
 
 **👤 Acdiel Bombin**
 
-* `ASPECTOS POSITIVOS` (+): Siempre encuentra los detalles que faltan para resolver un error.  
+* `ASPECTOS POSITIVOS` (+):Estuvo preocupado y presente en la mayor parte del codigo, avanzó en funciones y opciones del menú. Es quien mejor se maneja en la plataforma. 
 
-* `ASPECTOS A MEJORAR` (*): Presencia (sin embargo eso es fuera de su control)
+* `ASPECTOS A MEJORAR` (*):Entendió muy tarde como funciona la implementación de los mapas (especificamente despues de la revisión de avance el martes)
+
+)
 
 **👤 Diego Truyol**
 
 * `ASPECTOS POSITIVOS`(+): Siempre esta buscando errores y reparando cualquier error que algun miebro del grupo haya podido hacer.  
 
-* `ASPECTOS A MEJORAR`(*): Presencia (sin embargo eso es fuera de su control)
+* `ASPECTOS A MEJORAR`(*): Presencia (sin embargo eso es fuera de su control Mejor comprension de como funcionan los mapas.)
 
 **👤Felix Lazcano**
 
-* `ASPECTOS POSITIVOS`(+): Dispuesto a colaborar y  a veces tira ideas innovadoras
+* `ASPECTOS POSITIVOS`(+): Dispuesto a colaborar a cualquiera hora y probar todo metodo para que el codigo funcione
 
-* `ASPECTOS A MEJORAR`(*): Presencia (sin embargo eso es fuera de su control)
+* `ASPECTOS A MEJORAR`(*): Mayor presencia y participación dentro del grupo. 
 
 ----------------------------------------------------
 ### ✨Puntos de premio/castigo a cada integrante dependiendo del trabajo realizado.
-----------------------------------------------------
+---------------------------------------------------+-
 
-**👤Bastian Carrasco**: 0
+**👤Bastian Carrasco*:-750
 
-**👤 Acdiel Bombin**: 0
+**👤 Acdiel Bombin: : -750
 
-**👤 Diego Truyol**: 0
+**👤 Diego Truyol: :-750
 
-**👤Felix Lazcano**: 0
+**👤Felix Lazcano: : 0

@@ -61,8 +61,8 @@ int op=10;
 		printf("| 5. Buscar Productos por Marca            |\n");
 		printf("| 6. Buscar Productos por Nombre           |\n");
 		printf("| 7. Mostrar todos los Productos           |\n");
-		printf("| 8. Agregar al Carrito              ✖     |\n");
-    printf("| 9. Concretar Compra                ✖     |\n");
+		printf("| 8. Agregar al Carrito                    |\n");
+    printf("| 9. Concretar Compra                      |\n");
     printf("| 0. Salir                                 |\n");
     printf("--------------------------------------------\n");
 
@@ -75,11 +75,13 @@ int op=10;
   //  char linea[300];
   //  char *token;
   //  Producto *b=NULL;
+
+  //AQUI!
   
     Carrito *c = NULL;
     int a=0;
     Carrito fila[50];
-    Producto *b=NULL;;
+    Producto *b=NULL;
     char nombre_carrito[30];
     int i=0,magnitud=50;
 
@@ -148,8 +150,11 @@ int op=10;
 
 //➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖//
 
+/*
+ Agrega un producto al carrito de compras, dicho carrito tendrá su nombre propio. Pirmero se le pregunta cual es el producto que desea agregar, luego cuanta es la cantidad que quiere añadir, por ultimo se le preguntará si quiere agregar otro produto más.
+*/
       case 8:
-      
+    
       printf("Ingrese nombre carrito: ");
       scanf(" %[^\n]",nombre_carrito);
 
@@ -157,11 +162,13 @@ int op=10;
         if (strcmp(nombre_carrito,fila[i].nombre_de_carrito)==0)
         {  
           break;
-        }else if(strlen (fila[i].nombre_de_carrito)==0){
+        }else if( strlen (fila[i].nombre_de_carrito)==0){
           strcpy(fila[i].nombre_de_carrito,nombre_carrito);
           break;
         } 
       }
+/* */
+
 ///////////////////////////////////////////////////////////////
 
       int indice=0;
@@ -173,23 +180,23 @@ int op=10;
         char nombre_c[20];
         int cosas_al_carro=0;
 
-        printf("Ingrese producto: ");
-        scanf(" %[^\n]",nombre_c);
+       printf("Ingrese producto: ");
+       scanf(" %[^\n]",nombre_c);
 
-        printf("Ingrese cuantos: ");
-        scanf("%d",&cosas_al_carro);
+       printf("Ingrese cuantos: ");
+       scanf("%d",&cosas_al_carro);
 
         while (b!=NULL){
 
           if (strcmp(nombre_c,b->nombre)==0){
 
-            strcpy(fila[i].chek[indice].nombre_producto,b->nombre);
-            fila[i].chek[indice].cantidad = cosas_al_carro;
-            fila[i].chek[indice].precios = b->precio;
-            break;
+          strcpy(fila[i].chek[indice].nombre_producto,b->nombre);
+          fila[i].chek[indice].cantidad = cosas_al_carro;
+          fila[i].chek[indice].precios = b->precio;
+          break;
         }
       
-          else b=nextMap(producto_nombre);
+        else b=nextMap(producto_nombre);
         }
 
         indice++;
@@ -207,33 +214,12 @@ int op=10;
 
       break;
 
-
-
-
-
-
-
-
-
-      
-
-    /*  c = malloc(sizeof(Carrito));
-
-      printf("Nombre: "); scanf(" %[^\n]", c->nombre);
-      
-      printf("Cantidad: "); scanf("%d", &c->cantidad);
-
-      printf("\n");
-      
-
-      insertMap(producto_nombre, c->nombre, c);
-
-      agregarCarrito(producto_nombre, c->cantidad, carrito);
-
-      break;*/
-
 //➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖//
        case 9:
+
+       /*Concreta la compra de los productos seleccionados en el caso 8. Se pide ingresar el nombre de carro, luego la funcion buesa el carro en el arreglo fila. De encontrarlo,imprime los datos de la sigugiente manera:
+       -Imprime el titulo "Nombre de carro" y Lista de compras" con los nombres de productos por orden de ingreso, junto con la cantidad y precio del producto.
+       - Finalmente imprime el total a pagar junto con eliminar el carro ya usado */
 
        while(1){
           char pagar[30];
@@ -247,6 +233,10 @@ int op=10;
          if (strcmp(pagar,fila[indice].nombre_de_carrito)==0){
            break;
          }
+       }
+       if(indice == 50){
+         printf("Carro no encontrado\n");
+         break;
        }
        printf("\n");
 
@@ -267,10 +257,15 @@ int op=10;
        }
        printf("--------------------------\n");
        printf("Total a pagar: %d \n",suma);
+
+
+       strcpy(fila[indice].nombre_de_carrito,"Borrado");
+       printf("\n");
+       
+       printf("CARRO ELIMINADO");
        break;
 
        }
-
        break;
 
     }

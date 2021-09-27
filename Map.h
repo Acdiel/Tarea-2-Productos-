@@ -3,8 +3,8 @@
 
 typedef struct Map Map;
 
+   
 
-// Estructura de dato tipo Producto, en el cual se almacenan los datos de cada producto en especifico//
 
 typedef struct{
 	char nombre[50];
@@ -14,7 +14,7 @@ typedef struct{
 	int precio;
 }Producto;
 
-// Estructura de dato tipo cosas//
+
 typedef struct{
 
   char nombre_producto[20];
@@ -22,7 +22,7 @@ typedef struct{
   int precios;
 }cosas;
 
-//Estructura de dato tipo carrito, en esta estructura se van almacenando todos los productos que se van requiriendo, el cual contiene su propio nombre//
+
 
 typedef struct{
 	char nombre_de_carrito[30];
