@@ -39,14 +39,14 @@ Se deja el link para compilar el codigo.
 * `ASPECTOS POSITIVOS` (+):Estuvo preocupado y presente en la mayor parte del codigo, avanzó en funciones y opciones del menú. Es quien mejor se maneja en la plataforma. 
 
 * `ASPECTOS A MEJORAR` (*):Entendió muy tarde como funciona la implementación de los mapas (especificamente despues de la revisión de avance el martes)
-
 )
 
 **👤 Diego Truyol**
 
-* `ASPECTOS POSITIVOS`(+): Siempre esta buscando errores y reparando cualquier error que algun miebro del grupo haya podido hacer.  
+* `ASPECTOS POSITIVOS`(+):Capaz de identificar errores y reparando cualquier error que algun miembro del grupo haya podido hacer. Ordenado.
 
-* `ASPECTOS A MEJORAR`(*): Presencia (sin embargo eso es fuera de su control Mejor comprension de como funcionan los mapas.)
+* `ASPECTOS A MEJORAR`(*): Presencia (sin embargo eso es fuera de su control Mejor comprension de como funcionan los mapas.
+)
 
 **👤Felix Lazcano**
 
@@ -56,12 +56,12 @@ Se deja el link para compilar el codigo.
 
 ----------------------------------------------------
 ### ✨Puntos de premio/castigo a cada integrante dependiendo del trabajo realizado.
----------------------------------------------------+-
+----------------------------------------------------
 
-**👤Bastian Carrasco*:-750
+**👤Bastian Carrasco**: +10
 
-**👤 Acdiel Bombin: : -750
+**👤 Acdiel Bombin**: : 0
 
-**👤 Diego Truyol: :-750
+**👤 Diego Truyol**: -5                         
 
-**👤Felix Lazcano: : 0
+**👤Felix Lazcano**: -5
